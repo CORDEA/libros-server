@@ -23,8 +23,6 @@ require 'sinatra/activerecord'
 class Book < ActiveRecord::Base
 end
 
-raise "The table 'books' doesn't exist." if !Book.table_exists?
-
 class App < Sinatra::Base
 
   BOOK_SEARCH_API_URL =
